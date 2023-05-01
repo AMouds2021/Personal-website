@@ -1,0 +1,33 @@
+@import "./mixins";
+.projects__content {
+  display: grid;
+  @include twocolumns(7.4rem, 7.5rem);
+}
+
+.projects__text {
+  align-self: center;
+}
+
+.projects__img {
+  max-width: 100%;
+  box-shadow: 0 0 0.3rem rgb(0, 0, 0, 0.6);
+}
+
+.projects__description {
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.projects__link {
+  color: var(--color-dark-blue);
+}
+
+.projects__link::after {
+  content: "";
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background-image: url(./assets/external-icon.png);
+  background-size: contain;
+  margin-left: 0.6rem;
+}
